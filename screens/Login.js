@@ -38,7 +38,6 @@ function Login() {
             }))
             return
         } else if (!isLogin && (!credentials.password || credentials.password.length < 6 || credentials.password !== credentials.confirmPassword)) {
-            console.log(`${credentials.password} vs ${credentials.confirmPassword}`)
             setIsValid(prev => ({
                 ...prev,
                 password: false
